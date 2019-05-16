@@ -1,0 +1,8 @@
+canvas {
+    border:1px solid #d3d3d3;
+    background-image: url("GameBackground.png");
+}
+#gamepiece {
+  background-color: blue;
+  width: 500px;
+}
