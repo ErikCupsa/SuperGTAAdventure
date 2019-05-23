@@ -111,7 +111,7 @@ function updateGameArea() {
     }
     myScore.text="SCORE: " + myGameArea.frameNo;
     if (myGameArea.frameNo == 100){
-      alert("yay");
+      alert("ya");
     }
     myScore.update();
     myGamePiece.newPos();
