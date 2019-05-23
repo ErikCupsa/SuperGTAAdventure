@@ -125,27 +125,10 @@ function everyinterval(n) {
 function moveGamePiece(event) {
   var keyPressed = event.key;
 if(keyPressed == "a") {myGamePiece.speedX = -1; }
-if (keyPressed == "d") {myGamePiece.speedX = 1; }
-if (keyPressed == "w") {myGamePiece.speedY = -1; }
-if (keyPressed == "s") {myGamePiece.speedY = 1; }
-}
-function moveup() {
-    myGamePiece.speedY = -1;
-}
-
-function movedown() {
-    myGamePiece.speedY = 1;
-}
-
-function moveleft() {
-    myGamePiece.speedX = -1;
-}
-
-function moveright() {
-    myGamePiece.speedX = 1;
-}
-
-function clearmove() {
-    myGamePiece.speedX = 0;
+else if (keyPressed == "d") {myGamePiece.speedX = 1; }
+else if (keyPressed == "w") {myGamePiece.speedY = -1; }
+else if (keyPressed == "s") {myGamePiece.speedY = 1; }
+else {myGamePiece.speedX = 0;
     myGamePiece.speedY = 0;
+     }
 }
