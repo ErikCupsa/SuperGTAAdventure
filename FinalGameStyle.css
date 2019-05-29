@@ -23,3 +23,8 @@ h1 {
    font-family: 'pricedownblack', Fallback, sans-serif;
 }
 
+.hback {
+     background-image:url("https://images-na.ssl-images-amazon.com/images/I/41I%2BvcnXn-L.png");
+	background-size: 600px;
+	background-repeat: no-repeat;
+}
