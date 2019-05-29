@@ -7,3 +7,19 @@ canvas {
 #HighScore {
   margin-top: 150px;
 }
+
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('../font/pricedown-webfont.eot');
+    src: url('../font/pricedown-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pricedown-webfont.woff') format('woff'),
+         url('../font/pricedown-webfont.ttf') format('truetype'),
+         url('../font/pricedown-webfont.svg#pricedownblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+   font-family: 'pricedownblack', Fallback, sans-serif;
+}
+
