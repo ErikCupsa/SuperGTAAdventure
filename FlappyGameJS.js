@@ -3,12 +3,14 @@ var generatedObstacles = [];
 var userScore;
 var userHighScore = 0;
 var displayHighScore;
-var myMusic;
+var BackgroundMusicFlappy;
+var deathNoise;
+var jetpackNoise;
 
-function startGame() {
-  myMusic = new sound("BackgroundMusic.mp3");
-  myMusic.play();
-  var game = document.createElement("div");
+function startFlappyGame() {
+  BackgroundMusicFlappy = new sound("BackgroundMusicFlappy.mp3");
+  deathNoise = new sound("DeathNoise.mp3");
+  jetpackNoise = new sound("JetpackNoise.mp3");
   userCharacter = new component(20, 30, "Character1M.png", 10, 150, "image");
   userScore = new component("30px", "Consolas", "black", 28, 40, "text");
   displayHighScore = document.createElement("p");
@@ -145,14 +147,17 @@ function accelerate(n) {
   userCharacter.gravity = n;
 }
 function moveGamePiece(event) {
+    BackgroundMusicFlappy.play();
+    jetpackNoise.play();
   var keyPressed = event.keyCode;
  if (keyPressed == "32") {
    userCharacter.speedY = -3;
-      accelerate(-0.3);
+      accelerate(-0.4);
    userCharacter.image.src = "Character1MFlying.png"
  }
 }
 function resetMovement(){
+  jetpackNoise.stop();
   userCharacter.image.src = "Character1M.png"
   userCharacter.speedX = 0;
   userCharacter.speedY = 0;
@@ -160,6 +165,7 @@ function resetMovement(){
 }
 
 function restartGame() {
+  deathNoise.play();
   if (gameArea.frameNo > userHighScore) {
     userHighScore = gameArea.frameNo;
   }
@@ -178,6 +184,6 @@ function sound(src) {
         this.sound.play();
     }
     this.stop = function(){
-        this.sound.pause();
+      this.sound.pause();
     }
 }
