@@ -28,3 +28,35 @@ h1 {
 	background-size: 600px;
 	background-repeat: no-repeat;
 }
+@keyframes bgcolor {
+    0% {
+        background-color: lightblue
+    }
+
+    20% {
+        background-color: aqua
+    }
+
+    40% {
+        background-color: greenyellow
+    }
+
+    50% {
+        background-color: yellow
+    }
+
+    60% {
+        background-color: orange
+    }
+
+    80% {
+        background-color: red
+    }
+
+    100% {
+        background-color: purple
+    }
+}
+body {
+    animation: bgcolor 5s infinite;
+}
