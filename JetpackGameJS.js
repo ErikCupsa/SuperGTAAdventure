@@ -3,12 +3,12 @@ var generatedObstacles = [];
 var userScore;
 var userHighScore = 0;
 var displayHighScore;
-var BackgroundMusicFlappy;
+var BackgroundMusicJetpack;
 var deathNoise;
 var jetpackNoise;
 
-function startFlappyGame() {
-  BackgroundMusicFlappy = new sound("BackgroundMusicFlappy.mp3");
+function startJetpackGame() {
+  BackgroundMusicJetpack = new sound("BackgroundMusicJetpack.mp3");
   deathNoise = new sound("DeathNoise.mp3");
   jetpackNoise = new sound("JetpackNoise.mp3");
   userCharacter = new component(20, 30, "Character1M.png", 10, 150, "image");
@@ -147,7 +147,7 @@ function accelerate(n) {
   userCharacter.gravity = n;
 }
 function moveGamePiece(event) {
-    BackgroundMusicFlappy.play();
+    BackgroundMusicJetpack.play();
     jetpackNoise.play();
   var keyPressed = event.keyCode;
  if (keyPressed == "32") {
