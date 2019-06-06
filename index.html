@@ -4,8 +4,10 @@
 	<title> Super GTA Adventure </title>
 	<link href="FinalGameStyle.css" rel="stylesheet" type="text/css" /> 
 </head>
-
-<body class="hback">
+<script src="JetpackGameJS.js">
+</script>
+	
+<body class="hback" onkeydown="moveGamePiece(event)" onkeyup="resetMovement(event)">
 	
 	<div>
 		<br> 
@@ -14,7 +16,7 @@
       <table align="center">
         <tr>
           <td>
-            <button id= "playbutton"><a class="acolor" href="JetpackGame.html">random Game</a></button>
+            <button id= "start" onclick="startJetpackGame()"><a class="acolor">Start</a></button>
           </td>
         </tr>
         </table>
