@@ -50,11 +50,14 @@ img {
 	width:cover;
 }
 
+.aback {
+     background-image:url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .main_header {
  	padding: 60px;
     	text-align: center;
-	background: cover;
-	background-repeat: no-repeat;
     	color: white;
 	font-size: 18px;
 }
