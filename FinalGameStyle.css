@@ -10,9 +10,11 @@ canvas {
 }
 
 .hback {
-     background-image:url("https://vignette.wikia.nocookie.net/gtawiki/images/5/50/Wiki-background/revision/latest?cb=20181227145223");
-	background-size: 600px;
+    background-image:url("https://vignette.wikia.nocookie.net/gtawiki/images/5/50/Wiki-background/revision/latest?cb=20181227145223");
+	background-size: cover ;
 	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
 }
 @keyframes bgcolor {
     0% {
@@ -51,9 +53,11 @@ img {
 }
 
 .aback {
-     background-image:url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
-	background-size: cover;
+	background-image:url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
+	background-size: cover ;
 	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
 }
 .main_header {
  	padding: 60px;
