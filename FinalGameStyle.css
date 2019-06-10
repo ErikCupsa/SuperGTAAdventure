@@ -59,9 +59,10 @@ img {
 	background-position: center;
 	height: 100%;
 }
-.main_header {
+.mheader {
  	padding: 60px;
     	text-align: center;
+	font-family: Pricedown Std Black, sans-serif;
     	color: white;
 	font-size: 18px;
 }
