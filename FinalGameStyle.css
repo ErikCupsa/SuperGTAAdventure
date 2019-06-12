@@ -52,6 +52,11 @@ img {
 	width:cover;
 }
 
+.acolor {
+  animation: acolor 60s infinite;
+  text-decoration: none;
+} 
+
 .aback {
 	background-image:url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
 	background-size: cover ;
@@ -83,8 +88,8 @@ img {
 }
 
 #gametitle {
-	height: 1000px;
-	width: 1000px;
+	height: 500px;
+	width: 600px;
 }
 
 #playbutton{
