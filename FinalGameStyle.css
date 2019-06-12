@@ -106,3 +106,14 @@ img {
     top: 700px;
 }
 
+#otherbutton{
+    height : 30px;
+    width : 150px;
+    background-color: black ;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
