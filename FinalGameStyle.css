@@ -108,14 +108,19 @@ img {
           perspective: 700px;
 	vertical-align: middle;
 } 
-
-body {
+p {
+	text-align: center;
+	padding: 50px;
+	font-size:16px;
+	font-family: sans-serif;
+}
+.aback {
 	background-image:url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
 	background-size: cover ;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
-	background-colour: #2d2d86;
+	background-colour: darkblue;
 }
 .mheader {
  	padding: 60px;
