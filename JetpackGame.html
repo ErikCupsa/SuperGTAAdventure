@@ -7,8 +7,23 @@
 <body onkeydown="moveGamePiece(event)" onkeyup="resetMovement(event)">
 <script src="JetpackGameJS.js">
 </script>
+  
+  <div id="nav">
+    <div id="navElements">
+      <table width=1700px>
+        <tr>
+          <td><a href="index.html" class="acolor">Home</a></td>
+          <td><a href="play.html"  class="acolor">Play</a></td>
+          <td><a href="rules.html" class="acolor">Rules</a></td>
+          <td><a href="about.html" class="acolor">About</a></td>
+          <td><a href="info.html" class="acolor">Information</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
 <div id="startarea">
-<button onclick="startJetpackGame()"id="start" disabled="true">Start Game</button>
+<button id= "playbutton" class="acolor" onclick="startJetpackGame()"id="start" disabled="true">Start Game</button>
 <h1>
   Welcome!
 </h1>
