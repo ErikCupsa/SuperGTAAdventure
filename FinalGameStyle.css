@@ -125,8 +125,6 @@ img {
 }
 
 .bodytext {
-	background-color: gray;
-	opacity: 0.2;
 	padding: 60px;
     	text-align: center;
 	font-family: sans-serif;
@@ -134,7 +132,7 @@ img {
 	font-size: 14px;
 }
 .bodyback {
-	background-color: #0066cc;
+	background-color: #2d2d86;
 	opacity: 0.3;
 }
 
