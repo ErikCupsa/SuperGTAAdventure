@@ -115,30 +115,26 @@ img {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
+	background-colour:blue;
 }
 .mheader {
  	padding: 60px;
     	text-align: center;
 	font-family: Pricedown Bl, sans-serif;
     	color: white;
-	font-size: 18px;
+	font-size: 22px;
+	background-colour:blue;
 }
 .bodytext {
 	background-colour:blue;
 	text-align: center;
 	padding: 50px;
-	font-size:14px;
+	font-size:16px;
 	font-family: sans-serif;
 	color:white;
-	position: relative;
-	z-index:3;	
+	
 }
-/*.bback {
-	background-color: darkblue;
-	position: relative;
-	z-index:2;
-}
-*/
+
 #nav {
   height: 50px;
   width: 1500px;
