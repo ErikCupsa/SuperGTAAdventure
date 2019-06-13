@@ -121,6 +121,7 @@ img {
 	height: 500px;
 	width: 600px;
 	align: center;
+	margin: auto;
 }
 
 #playbutton{
