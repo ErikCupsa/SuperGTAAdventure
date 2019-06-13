@@ -689,11 +689,10 @@ function levelFive(){
       }
   }
   if(gameArea.frameNo > 1000) {
-    userLevel = 2;
     gameArea.frameNo = 0;
     userHighScore = 0;
     updateGameArea();
     winAudio.play()
-    restartGame();
+    alert = "You Won!"
   }
 }
