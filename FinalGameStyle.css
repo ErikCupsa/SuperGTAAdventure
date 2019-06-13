@@ -124,6 +124,14 @@ img {
 	font-size: 18px;
 }
 
+bodytext {
+	padding: 60px;
+    	text-align: center;
+	font-family: sans-serif;
+    	color: white;
+	font-size: 14px;
+}
+
 #nav {
   height: 50px;
   width: 1500px;
