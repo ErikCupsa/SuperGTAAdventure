@@ -77,9 +77,10 @@ canvas {
     } 
 }
 
-body {
+/*body {
    	animation: bgcolor 5s infinite;
 }
+*/
 img {
 	width:cover;
 }
@@ -126,12 +127,12 @@ p {
  	padding: 60px;
     	text-align: center;
 	font-family: Pricedown Bl, sans-serif;
-    	color: white;
+    	colour: white;
 	font-size: 22px;
 
 }
 .bodytext {
-	color: blue;
+	colour: blue;
 	text-align: center;
 	padding: 50px;
 	font-size:16px;
