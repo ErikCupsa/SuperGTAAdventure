@@ -123,11 +123,9 @@ img {
 	left: 50%;
 }
 
-#playbutton{
+#playbutton {
     height : 50px;
     width : 250px;
-    background-color: black ;
-    border: none;
     text-align: center;
     display: inline-block;
     font-size: 16px;
@@ -135,16 +133,69 @@ img {
     position: absolute; 
     left: 500px;
     top: 400px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
 }
 
 #otherbutton{
     height : 30px;
     width : 150px;
-    background-color: black ;
-    border: none;
     text-align: center;
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
+     -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  padding: 20px 38px;
+  top: 0;
+  font-size: 30px;
+  border-radius: 4px;
+  border-bottom: 1px black;
+  background: black;
+  color: white;
+  box-shadow: 0px 0px 0px grey;
+  
+  -webkit-transform: translateZ(0);
+     -moz-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+          transform: translateZ(0);
+  
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+button:hover {
+  top: -10px;
+  box-shadow: 0px 10px 10px grey; 
+  
+  -webkit-transform: rotateX(15deg);
+     -moz-transform: rotateX(15deg);
+      -ms-transform: rotateX(15deg);
+          transform: rotateX(15deg);
+}
+
+button:active {
+  top: 0px;
+  box-shadow: 0px 0px 0px rgba(165, 23, 15, 0);
 }
 
