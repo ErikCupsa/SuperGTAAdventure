@@ -120,8 +120,7 @@ img {
 #gametitle {
 	height: 500px;
 	width: 600px;
-	align: center;
-	margin: auto;
+	left: 50%;
 }
 
 #playbutton{
