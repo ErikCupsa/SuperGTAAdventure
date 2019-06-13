@@ -72,22 +72,7 @@ canvas {
 
     100% {
         color: purple
-    }
-	 height : 50px;
-    width : 250px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-    position: absolute; 
-    left: 500px;
-    top: 500px;
-  
-  -webkit-perspective: 700px;
-     -moz-perspective: 700px;
-      -ms-perspective: 700px;
-          perspective: 700px;
-	vertical-align: middle; 
+    } 
 }
 
 body {
@@ -100,21 +85,6 @@ img {
 .acolor {
   animation: acolor 60s infinite;
   text-decoration: none;
-	 height : 50px;
-    width : 250px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-    position: absolute; 
-    left: 500px;
-    top: 500px;
-  
-  -webkit-perspective: 700px;
-     -moz-perspective: 700px;
-      -ms-perspective: 700px;
-          perspective: 700px;
-	vertical-align: middle; 
 } 
 
 .aback {
