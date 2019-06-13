@@ -124,7 +124,9 @@ img {
 	font-size: 18px;
 }
 
-bodytext {
+.bodytext {
+	background-color: gray;
+	opacity: 0.2;
 	padding: 60px;
     	text-align: center;
 	font-family: sans-serif;
