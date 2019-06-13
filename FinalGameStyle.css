@@ -89,6 +89,7 @@ img {
 #gametitle {
 	height: 500px;
 	width: 600px;
+	left: 500px;
 }
 
 #playbutton{
