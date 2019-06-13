@@ -138,7 +138,7 @@ img {
      -moz-perspective: 700px;
       -ms-perspective: 700px;
           perspective: 700px;
-	align-items: center; 
+	vertical-align: middle; 
 }
 
 #otherbutton{
@@ -152,7 +152,7 @@ img {
      -moz-perspective: 700px;
       -ms-perspective: 700px;
           perspective: 700px;
-	align-items: center; 
+	vertical-align: middle; 
 }
 
 button {
