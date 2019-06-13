@@ -90,7 +90,7 @@ img {
 .acolor2 {
   animation: acolor 60s infinite;
   text-decoration: none;
-	height : 50px;
+	 height : 50px;
     width : 250px;
     text-align: center;
     display: inline-block;
@@ -99,6 +99,12 @@ img {
     position: absolute; 
     left: 500px;
     top: 400px;
+  
+  -webkit-perspective: 700px;
+     -moz-perspective: 700px;
+      -ms-perspective: 700px;
+          perspective: 700px;
+	vertical-align: middle;
 } 
 
 .aback {
