@@ -12,7 +12,6 @@ canvas {
 .hback {
     background-image:url("https://vignette.wikia.nocookie.net/gtawiki/images/5/50/Wiki-background/revision/latest?cb=20181227145223");
 	background-size: cover ;
-	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
 }
@@ -103,7 +102,7 @@ img {
     border-radius: 10px;
     position: absolute; 
     left: 500px;
-    top: 700px;
+    top: 500px;
 }
 
 #otherbutton{
