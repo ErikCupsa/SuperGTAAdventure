@@ -201,7 +201,7 @@ button {
           transition: all 0.2s ease;
 }
 
-button:not(.Jetpackgame.html) hover {
+button:not(Jetpackgame.html) hover {
   top: -10px;
   box-shadow: 0px 10px 10px grey; 
   
