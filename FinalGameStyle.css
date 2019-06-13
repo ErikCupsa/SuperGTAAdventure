@@ -89,7 +89,7 @@ img {
 #gametitle {
 	height: 500px;
 	width: 600px;
-	left: 500px;
+	right: 500px;
 }
 
 #playbutton{
@@ -103,7 +103,7 @@ img {
     border-radius: 10px;
     position: absolute; 
     left: 500px;
-    top: 300px;
+    top: 400px;
 }
 
 #otherbutton{
