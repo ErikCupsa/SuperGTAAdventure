@@ -99,12 +99,6 @@ img {
     position: absolute; 
     left: 500px;
     top: 400px;
-  
-  -webkit-perspective: 700px;
-     -moz-perspective: 700px;
-      -ms-perspective: 700px;
-          perspective: 700px;
-	vertical-align: middle;
 } 
 
 .aback {
