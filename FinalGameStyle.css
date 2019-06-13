@@ -133,6 +133,10 @@ img {
     	color: white;
 	font-size: 14px;
 }
+.bodyback {
+	background-color: #0066cc;
+	opacity: 0.3;
+}
 
 #nav {
   height: 50px;
