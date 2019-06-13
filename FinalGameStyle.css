@@ -88,8 +88,8 @@ img {
 } 
 
 .acolor2 {
-  animation: acolor 60s infinite;
-  text-decoration: none;
+
+	text-color: white;
 	 height : 50px;
     width : 250px;
     text-align: center;
