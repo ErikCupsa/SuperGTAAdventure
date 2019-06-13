@@ -130,10 +130,13 @@ img {
 	font-size:14px;
 	font-family: sans-serif;
 	color:white;
+	position: relative;
+	z-index:3;	
 }
 .bback {
-	background-color: dark blue;
+	background-color: darkblue;
 	position: relative;
+	z-index:2;
 }
 
 #nav {
