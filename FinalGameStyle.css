@@ -211,7 +211,7 @@ button:not(Jetpackgame.html) hover {
           transform: rotateX(15deg);
 }
 
-button:active {
+button:not(Jetpackgame.html) active {
   top: 0px;
   box-shadow: 0px 0px 0px rgba(165, 23, 15, 0);
 }
