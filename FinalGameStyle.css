@@ -44,6 +44,37 @@ canvas {
         background-color: purple
     }
 }
+
+@keyframes acolor {
+    0% {
+       color: lightblue
+    }
+
+    20% {
+        color: aqua
+    }
+    
+    40% {
+        color: greenyellow
+    }
+    
+    50% {
+        color: yellow
+    }
+
+    60% {
+        color: orange
+    }
+
+    80% {
+        color: red
+    }
+
+    100% {
+        color: purple
+    }
+}
+
 body {
    	animation: bgcolor 5s infinite;
 }
