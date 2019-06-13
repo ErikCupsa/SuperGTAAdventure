@@ -202,8 +202,8 @@ button {
 }
 
 button:hover {
-  top: -10px;
-  box-shadow: 0px 10px 10px grey; 
+  top: -3px;
+  box-shadow: 0px 3px 3px grey; 
   
   -webkit-transform: rotateX(1px);
      -moz-transform: rotateX(1px);
