@@ -327,7 +327,7 @@ function sound(src) {
 //first level
 function levelOne(){
   for (i = 0; i < generatedObstaclesTop.length; i++) {
-  //the function is where we define where the top obstacles go in terms of height and distance between obstacles relative to the frame number, so they will mix up positions and sizes and not be all the same. .y is for y-axis movement and size change and .x is for x-axis movement
+  //the function is where we define the top and bottom obstacles' height, and when they change to the next obstacle using frame number
   //we repeated this as necessary for each of the levels and obstacle variation.
     generatedObstaclesTop[i].x += -3;
       generatedObstaclesTop[i].update(
@@ -490,6 +490,7 @@ function levelTwo(){
     restartGame();
   }
 }
+
 function levelThree(){
   document.getElementById("HighScore").innerHTML = "Your high score is " + userHighScore + ". You are currently on level " + userLevel;
   for (i = 0; i < generatedObstaclesTop.length; i++) {
@@ -504,23 +505,35 @@ function levelThree(){
         generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -12;
         generatedObstaclesTop[i].update();
       }
-      if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
+      if(gameArea.frameNo > 100 && gameArea.frameNo < 250){
         generatedObstaclesTop[i].x += -2;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 200 && gameArea.frameNo < 500) {
+      else if(gameArea.frameNo > 250 && gameArea.frameNo < 300) {
         generatedObstaclesTop[i].x += -1;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 500 && gameArea.frameNo < 700) {
+      else if(gameArea.frameNo > 300 && gameArea.frameNo < 350) {
         generatedObstaclesTop[i].x += -2;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 700 && gameArea.frameNo < 850) {
+      else if(gameArea.frameNo > 350 && gameArea.frameNo < 650) {
         generatedObstaclesTop[i].x += -0.1;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 850 && gameArea.frameNo < 1000) {
+      else if(gameArea.frameNo > 650 && gameArea.frameNo < 850) {
+      generatedObstaclesTop[i].x += -3;
+      generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 850 && gameArea.frameNo < 1100) {
+        generatedObstaclesTop[i].x += -5;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1100 && gameArea.frameNo < 1300) {
+        generatedObstaclesTop[i].x += -2;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1200 && gameArea.frameNo < 1500) {
         generatedObstaclesTop[i].x += -5;
         generatedObstaclesTop[i].update();
       }
@@ -549,8 +562,17 @@ function levelThree(){
         generatedObstaclesBottom[i].x += -5;
         generatedObstaclesBottom[i].update();
       }
+      else if(gameArea.frameNo > 1000 && gameArea.frameNo < 1200) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1200 && gameArea.frameNo < 1500) {
+        generatedObstaclesTop[i].x += -7;
+        generatedObstaclesTop[i].update();
+      }
   }
-  if(gameArea.frameNo > 1000) {
+  //increased distance required to level up
+  if(gameArea.frameNo > 1500) {
     userLevel = 4;
     gameArea.frameNo = 0;
     userHighScore = 0;
@@ -574,23 +596,39 @@ function levelFour(){
         generatedObstaclesTop[i].update();
       }
       if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
-        generatedObstaclesTop[i].x += -2;
-        generatedObstaclesTop[i].update();
-      }
-      else if(gameArea.frameNo > 200 && gameArea.frameNo < 500) {
         generatedObstaclesTop[i].x += -1;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 500 && gameArea.frameNo < 700) {
+      else if(gameArea.frameNo > 200 && gameArea.frameNo < 500) {
         generatedObstaclesTop[i].x += -2;
         generatedObstaclesTop[i].update();
       }
+      else if(gameArea.frameNo > 500 && gameArea.frameNo < 700) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
       else if(gameArea.frameNo > 700 && gameArea.frameNo < 850) {
-        generatedObstaclesTop[i].x += -0.1;
+        generatedObstaclesTop[i].x += -6;
         generatedObstaclesTop[i].update();
       }
       else if(gameArea.frameNo > 850 && gameArea.frameNo < 1000) {
+        generatedObstaclesTop[i].x += -4;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1000 && gameArea.frameNo < 1200) {
+        generatedObstaclesTop[i].x += -2;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1200 && gameArea.frameNo < 1400) {
         generatedObstaclesTop[i].x += -5;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1400 && gameArea.frameNo < 1800) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1800 && gameArea.frameNo < 2000) {
+        generatedObstaclesTop[i].x += -1;
         generatedObstaclesTop[i].update();
       }
   }
@@ -602,24 +640,33 @@ function levelFour(){
         generatedObstaclesBottom[i].x += -2;
         generatedObstaclesBottom[i].update();
       }
-      else if(gameArea.frameNo > 200 && gameArea.frameNo < 500) {
+      else if(gameArea.frameNo > 200 && gameArea.frameNo < 450) {
         generatedObstaclesBottom[i].x += -1;
         generatedObstaclesBottom[i].update();
       }
-      else if(gameArea.frameNo > 500 && gameArea.frameNo < 700) {
+      else if(gameArea.frameNo > 450 && gameArea.frameNo < 650) {
         generatedObstaclesBottom[i].x += -2;
         generatedObstaclesBottom[i].update();
       }
-      else if(gameArea.frameNo > 700 && gameArea.frameNo < 850) {
+      else if(gameArea.frameNo > 650 && gameArea.frameNo < 900) {
         generatedObstaclesBottom[i].x += -0.1;
         generatedObstaclesBottom[i].update();
       }
-      else if(gameArea.frameNo > 850 && gameArea.frameNo < 1000) {
-        generatedObstaclesBottom[i].x += -5;
+      else if(gameArea.frameNo > 900 && gameArea.frameNo < 1300) {
+        generatedObstaclesBottom[i].x += -2;
         generatedObstaclesBottom[i].update();
       }
+      else if(gameArea.frameNo > 1300 && gameArea.frameNo < 1600) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1600 && gameArea.frameNo < 2000) {
+        generatedObstaclesTop[i].x += -7;
+        generatedObstaclesTop[i].update();
+      }
   }
-  if(gameArea.frameNo > 1000) {
+  //increased distance required to level up
+  if(gameArea.frameNo > 2000) {
     userLevel = 5;
     gameArea.frameNo = 0;
     userHighScore = 0;
@@ -642,24 +689,64 @@ function levelFive(){
         generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -20;
         generatedObstaclesTop[i].update();
       }
-      if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
-        generatedObstaclesTop[i].x += -2;
-        generatedObstaclesTop[i].update();
-      }
-      else if(gameArea.frameNo > 200 && gameArea.frameNo < 500) {
+      if(gameArea.frameNo > 100 && gameArea.frameNo < 500){
         generatedObstaclesTop[i].x += -1;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 500 && gameArea.frameNo < 700) {
+      else if(gameArea.frameNo > 400 && gameArea.frameNo < 700) {
+        generatedObstaclesTop[i].x += -1.5;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 700 && gameArea.frameNo < 900) {
         generatedObstaclesTop[i].x += -2;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 700 && gameArea.frameNo < 850) {
-        generatedObstaclesTop[i].x += -0.1;
+      else if(gameArea.frameNo > 900 && gameArea.frameNo < 1100) {
+        generatedObstaclesTop[i].x += -2.5;
         generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 850 && gameArea.frameNo < 1000) {
+      else if(gameArea.frameNo > 1100 && gameArea.frameNo < 1300) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1300 && gameArea.frameNo < 1500) {
+        generatedObstaclesTop[i].x += -4;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1500 && gameArea.frameNo < 1600) {
         generatedObstaclesTop[i].x += -5;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1600 && gameArea.frameNo < 1700) {
+        generatedObstaclesTop[i].x += -4;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1700 && gameArea.frameNo < 1850) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1850 && gameArea.frameNo < 1950) {
+        generatedObstaclesTop[i].x += -5;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2050 && gameArea.frameNo < 2150) {
+        generatedObstaclesTop[i].x += -6;
+        generatedObstaclesTop[i].update();
+      }      
+      else if(gameArea.frameNo > 2150 && gameArea.frameNo < 2250) {
+        generatedObstaclesTop[i].x += -7;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2250 && gameArea.frameNo < 2350) {
+        generatedObstaclesTop[i].x += -6;
+        generatedObstaclesTop[i].update();
+      
+      else if(gameArea.frameNo > 2350 && gameArea.frameNo < 2450) {
+        generatedObstaclesTop[i].x += -8;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2450 && gameArea.frameNo < 2500) {
+        generatedObstaclesTop[i].x += -9;
         generatedObstaclesTop[i].update();
       }
   }
@@ -667,28 +754,76 @@ function levelFive(){
       generatedObstaclesBottom[i].x += -3;
       generatedObstaclesBottom[i].update(
       );
-      if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
-        generatedObstaclesBottom[i].x += -2;
-        generatedObstaclesBottom[i].update();
+      if (gameArea.frameNo % 50 == 0){
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 20;
+        generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 200 && gameArea.frameNo < 500) {
-        generatedObstaclesBottom[i].x += -1;
-        generatedObstaclesBottom[i].update();
+      else if(gameArea.frameNo % 25 == 0){
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -20;
+        generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 500 && gameArea.frameNo < 700) {
-        generatedObstaclesBottom[i].x += -2;
-        generatedObstaclesBottom[i].update();
+      if(gameArea.frameNo > 100 && gameArea.frameNo < 500){
+        generatedObstaclesTop[i].x += -1;
+        generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 700 && gameArea.frameNo < 850) {
-        generatedObstaclesBottom[i].x += -0.1;
-        generatedObstaclesBottom[i].update();
+      else if(gameArea.frameNo > 500 && gameArea.frameNo < 800) {
+        generatedObstaclesTop[i].x += -2;
+        generatedObstaclesTop[i].update();
       }
-      else if(gameArea.frameNo > 850 && gameArea.frameNo < 1000) {
-        generatedObstaclesBottom[i].x += -5;
-        generatedObstaclesBottom[i].update();
+      else if(gameArea.frameNo > 800 && gameArea.frameNo < 1000) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1000 && gameArea.frameNo < 1200) {
+        generatedObstaclesTop[i].x += -0.1;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1200 && gameArea.frameNo < 1400) {
+        generatedObstaclesTop[i].x += -2;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1400 && gameArea.frameNo < 1600) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1600 && gameArea.frameNo < 1700) {
+        generatedObstaclesTop[i].x += -4;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1700 && gameArea.frameNo < 1800) {
+        generatedObstaclesTop[i].x += -3;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1800 && gameArea.frameNo < 1900) {
+        generatedObstaclesTop[i].x += -5;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 1900 && gameArea.frameNo < 2000) {
+        generatedObstaclesTop[i].x += -4;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2000 && gameArea.frameNo < 2100) {
+        generatedObstaclesTop[i].x += -6;
+        generatedObstaclesTop[i].update();
+      }      
+      else if(gameArea.frameNo > 2100 && gameArea.frameNo < 2200) {
+        generatedObstaclesTop[i].x += -4;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2200 && gameArea.frameNo < 2300) {
+        generatedObstaclesTop[i].x += -7;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2300 && gameArea.frameNo < 2400) {
+        generatedObstaclesTop[i].x += -9;
+        generatedObstaclesTop[i].update();
+      }
+      else if(gameArea.frameNo > 2400 && gameArea.frameNo < 2500) {
+        generatedObstaclesTop[i].x += -8;
+        generatedObstaclesTop[i].update();
       }
   }
-  if(gameArea.frameNo > 1000) {
+  if(gameArea.frameNo > 2500) {
     gameArea.frameNo = 0;
     userHighScore = 0;
     updateGameArea();
