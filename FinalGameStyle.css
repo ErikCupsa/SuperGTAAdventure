@@ -81,7 +81,7 @@ canvas {
     border-radius: 10px;
     position: absolute; 
     left: 500px;
-    top: 400px;
+    top: 500px;
   
   -webkit-perspective: 700px;
      -moz-perspective: 700px;
@@ -108,7 +108,7 @@ img {
     border-radius: 10px;
     position: absolute; 
     left: 500px;
-    top: 400px;
+    top: 500px;
   
   -webkit-perspective: 700px;
      -moz-perspective: 700px;
