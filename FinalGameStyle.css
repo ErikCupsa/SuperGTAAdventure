@@ -131,9 +131,9 @@ img {
 	font-family: sans-serif;
 	color:white;
 }
-.bodyback {
+.bback {
 	background-color:#2d2d86;
-	
+	position: relative;
 }
 
 #nav {
