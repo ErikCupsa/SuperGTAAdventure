@@ -497,11 +497,11 @@ function levelThree(){
       generatedObstaclesTop[i].update(
       );
       if (gameArea.frameNo % 50 == 0){
-        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 5;
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 12;
         generatedObstaclesTop[i].update();
       }
       else if(gameArea.frameNo % 25 == 0){
-        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -5;
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -12;
         generatedObstaclesTop[i].update();
       }
       if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
@@ -566,11 +566,11 @@ function levelFour(){
       generatedObstaclesTop[i].update(
       );
       if (gameArea.frameNo % 50 == 0){
-        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 5;
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 15;
         generatedObstaclesTop[i].update();
       }
       else if(gameArea.frameNo % 25 == 0){
-        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -5;
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -15;
         generatedObstaclesTop[i].update();
       }
       if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
@@ -635,11 +635,11 @@ function levelFive(){
       generatedObstaclesTop[i].update(
       );
       if (gameArea.frameNo % 50 == 0){
-        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 5;
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y + 20;
         generatedObstaclesTop[i].update();
       }
       else if(gameArea.frameNo % 25 == 0){
-        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -5;
+        generatedObstaclesTop[i].y = generatedObstaclesTop[i].y -20;
         generatedObstaclesTop[i].update();
       }
       if(gameArea.frameNo > 100 && gameArea.frameNo < 200){
