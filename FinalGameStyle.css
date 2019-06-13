@@ -121,18 +121,18 @@ p {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
-	background-colour: darkblue;
+	background-color: darkblue;
 }
 .mheader {
  	padding: 60px;
     	text-align: center;
 	font-family: Pricedown Bl, sans-serif;
-    	colour: white;
+    	color: white;
 	font-size: 22px;
 
 }
 .bodytext {
-	colour: blue;
+	color: blue;
 	text-align: center;
 	padding: 50px;
 	font-size:16px;
