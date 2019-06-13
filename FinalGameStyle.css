@@ -125,15 +125,15 @@ img {
 }
 .bodytext {
 	text-align: center;
-	padding: 100px;
+	padding: 50px;
 	font-size:14px;
 	font-family: sans-serif;
+	color:white;
 }
 .bodyback {
 	background-color:#2d2d86;
-	opacity: 0.3;
+	
 }
-
 
 #nav {
   height: 50px;
