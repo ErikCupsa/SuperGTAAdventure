@@ -123,7 +123,7 @@ p {
 	background-color: darkblue;
 }
 .mheader {
- 	padding: 60px;
+ 	padding: 10px;
     	text-align: center;
 	font-family: Pricedown Bl, sans-serif;
     	color: white;
@@ -133,7 +133,6 @@ p {
 .bodytext {
 	color: blue;
 	text-align: center;
-	padding: 50px;
 	font-size:16px;
 	font-family: sans-serif;
 
