@@ -190,6 +190,7 @@ function updateGameArea() {
     if (gameArea.frameNo == 1 || everyinterval(75)) {
       var building;
       var floornumber = Math.round(Math.random()*3);
+      //the following if statement randomly generates 1 of three bottom obstacles in the form of a building
       if(floornumber == 1){
         building = "Images/Building1.png";
       }
@@ -199,11 +200,13 @@ function updateGameArea() {
       else{
         building = "Images/Building2.png";
       }
-      var air;
+      var air; 
+//restricting the possible height of the buildings and making the buildings have random heights between 20 and 200
         x = gameArea.canvas.width;
         minHeight = 20;
         maxHeight = 200;
         height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+//generating flying obstacles based on the building height 
         if (height < 75){
           air = "Images/Plane.png";
         }
@@ -213,13 +216,14 @@ function updateGameArea() {
         else {
           air = "Images/Helicopter.png";
         }
-
+//defining minimum and maximum gap between obstacles to maintain playability
         minGap = 75;
         maxGap = 100;
         gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
         generatedObstaclesTop.push(new component(100, height, air, x, 0, "image"));
         generatedObstaclesBottom.push(new component(100, x - height - gap, building, x, height + gap + 30, "image"));
     }
+  //assigning values for the each level the player is on
     if (userLevel == 1){
       levelOne();
     }
@@ -235,33 +239,42 @@ function updateGameArea() {
     else if (userLevel == 5) {
       levelFive();
     }
+//if statement updates player highscore if when they pass their best frame number 
     userScore.text="SCORE: " + gameArea.frameNo;
     if (gameArea.frameNo > userHighScore){
       userHighScore = gameArea.frameNo;
+//displaying new highscore and level      
       document.getElementById("HighScore").innerHTML = "Your high score is " + userHighScore + ". You are currently on level " + userLevel;;
     }
+  //updating the  player's score and character's frame position 
     userScore.update();
     userCharacter.newPosition();
     userCharacter.update();
 }
-
+//
 function everyinterval(n) {
     if ((gameArea.frameNo / n) % 1 == 0) {return true;}
     return false;
 }
 function accelerate(n) {
   userCharacter.gravity = n;
+
+//Movement for in-game character
 }
 function moveGamePiece(event) {
+  //background music and jetpack sound effect
     backgroundMusicJetpack.play();
     jetpackNoise.play();
+  //first part of if statement: when player presses space, the character goes up, and if you hold down the movement accelerates
   var keyPressed = event.keyCode;
  if (keyPressed == "32") {
    event.preventDefault();
    userCharacter.speedY = -3;
       accelerate(-0.4);
+   //link to selected character
    userCharacter.image.src = chosenCharacterFlying;
  }
+  //sort of "secret" input: when user presses backspace, user receives alert for skipping a level and automatically moves to the next level
  else if (keyPressed == "8") {
    alert("You gave up on level " + userLevel);
    userLevel++;
@@ -271,11 +284,13 @@ function moveGamePiece(event) {
    restartGame();
    deathNoise.play();
  }
+ //if no keys are pressed, the character will accelerate downwards 
  else {
    userCharacter.speedY = 3;
     accelerate(0.4);
  }
 }
+//resetting character movement speed when starting new level
 function resetMovement(){
   jetpackNoise.stop();
   userCharacter.image.src = chosenCharacter
@@ -283,19 +298,21 @@ function resetMovement(){
   userCharacter.speedY = 0;
   accelerate(0.2);
 }
-
+//resetting highscore to 0 when moving to next level or starting game over
 function restartGame() {
   if (gameArea.frameNo > userHighScore) {
     userHighScore = gameArea.frameNo;
   }
+  //resetting obstacles and redisplaying character when starting new level
   generatedObstaclesTop = [];
   generatedObstaclesBottom = [];
   gameArea.frameNo = 0;
   userCharacter = new component(20, 30, chosenCharacter, 10, 150, "image");
 }
+//
 function sound(src) {
     this.sound = document.createElement("audio");
-    this.sound.src = src;
+    this.sound.src = src;4
     this.sound.setAttribute("preload", "auto");
     this.sound.setAttribute("controls", "none");
     this.sound.style.display = "none";
@@ -307,9 +324,12 @@ function sound(src) {
       this.sound.pause();
     }
 }
+//first level
 function levelOne(){
   for (i = 0; i < generatedObstaclesTop.length; i++) {
-      generatedObstaclesTop[i].x += -3;
+  //the function is where we define where the top obstacles go in terms of height and distance between obstacles relative to the frame number, so they will mix up positions and sizes and not be all the same. .y is for y-axis movement and size change and .x is for x-axis movement
+  //we repeated this as necessary for each of the levels and obstacle variation.
+    generatedObstaclesTop[i].x += -3;
       generatedObstaclesTop[i].update(
       );
       if (gameArea.frameNo % 50 == 0){
