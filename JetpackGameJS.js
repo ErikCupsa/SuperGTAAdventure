@@ -141,7 +141,7 @@ function component(width, height, color, x, y, type) {
         }
     }
     //Learned from w3schools
-    //The below funciton is checking to see if their are any collision. If there are, the game is over.
+    //The below funciton is checking to see if there are any collision. If there are, the game is over.
     this.crashWith = function crash(otherobj) {
         var myleft = this.x;
         var myright = this.x + (this.width);
@@ -276,6 +276,7 @@ function moveGamePiece(event) {
  }
   //sort of "secret" input: when user presses backspace, user receives alert for skipping a level and automatically moves to the next level
  else if (keyPressed == "8") {
+   if (userLevel < 5){
    alert("You gave up on level " + userLevel);
    userLevel++;
    gameArea.frameNo = 0;
@@ -283,6 +284,10 @@ function moveGamePiece(event) {
    updateGameArea();
    restartGame();
    deathNoise.play();
+   }
+   else{
+     alert("You are currently on the last level! Do not give up!")
+   }
  }
  //if no keys are pressed, the character will accelerate downwards 
  else {
