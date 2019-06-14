@@ -1,142 +1,142 @@
 canvas {
-    margin-left: 300px;
-    margin-top: 100px;
-    border:1px solid lightgray;
-    background-image: url("https://i.imgur.com/rdgmZTo.gif?noredirect");
-    background-repeat: no-repeat;
-    background-size: 1000px;
+  margin - left: 300px;
+  margin - top: 100px;
+  border: 1px solid lightgray;
+  background - image: url("https://i.imgur.com/rdgmZTo.gif?noredirect");
+  background - repeat: no - repeat;
+  background - size: 1000px;
 }
 #HighScore {
-  margin-top: 10px;
-  font-size: 30px;
+  margin - top: 10px;
+  font - size: 30px;
 }
 
 .hback {
-    background-image:url("https://vignette.wikia.nocookie.net/gtawiki/images/5/50/Wiki-background/revision/latest?cb=20181227145223");
-	background-size: cover ;
-	background-position: center;
-	height: 100%;
+  background - image: url("https://vignette.wikia.nocookie.net/gtawiki/images/5/50/Wiki-background/revision/latest?cb=20181227145223");
+  background - size: cover;
+  background - position: center;
+  height: 100 %;
 }
 @keyframes bgcolor {
-    0% {
-        background-color: lightblue
-    }
+  0 % {
+    background-color: lightblue
+  }
 
-    20% {
-        background-color: aqua
-    }
+  20 % {
+    background-color: aqua
+  }
 
-    40% {
-        background-color: greenyellow
-    }
+  40 % {
+    background-color: greenyellow
+  }
 
-    50% {
-        background-color: yellow
-    }
+  50 % {
+    background-color: yellow
+  }
 
-    60% {
-        background-color: orange
-    }
+  60 % {
+    background-color: orange
+  }
 
-    80% {
-        background-color: red
-    }
+  80 % {
+    background-color: red
+  }
 
-    100% {
-        background-color: purple
-    }
+  100 % {
+    background-color: purple
+  }
 }
 
 @keyframes acolor {
-    0% {
-       color: lightblue
-    }
+  0 % {
+    color: lightblue
+  }
 
-    20% {
-        color: aqua
-    }
-    
-    40% {
-        color: greenyellow
-    }
-    
-    50% {
-        color: yellow
-    }
+  20 % {
+    color: aqua
+  }
 
-    60% {
-        color: orange
-    }
+  40 % {
+    color: greenyellow
+  }
 
-    80% {
-        color: red
-    }
+  50 % {
+    color: yellow
+  }
 
-    100% {
-        color: purple
-    } 
+  60 % {
+    color: orange
+  }
+
+  80 % {
+    color: red
+  }
+
+  100 % {
+    color: purple
+  }
 }
 
 body {
-   	animation: bgcolor 5s infinite;
+  animation: bgcolor 5s infinite;
 }
 
 img {
-	width:cover;
+  width: cover;
 }
 
 .acolor {
   animation: acolor 60s infinite;
-  text-decoration: none;
+  text - decoration: none;
 } 
 
 .acolor2 {
 
-	text-color: white;
-	 height : 50px;
-    width : 250px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-    position: absolute; 
-    left: 500px;
-    top: 550px;
-  
-  -webkit-perspective: 700px;
-     -moz-perspective: 700px;
-      -ms-perspective: 700px;
-          perspective: 700px;
-	vertical-align: middle;
-} 
+  text - color: white;
+  height: 50px;
+  width: 250px;
+  text - align: center;
+  display: inline - block;
+  font - size: 16px;
+  border - radius: 10px;
+  position: absolute;
+  left: 500px;
+  top: 550px;
+
+  -webkit - perspective: 700px;
+  -moz - perspective: 700px;
+  -ms - perspective: 700px;
+  perspective: 700px;
+  vertical - align: middle;
+}
 p {
-	text-align: center;
-	font-size:16px;
-	font-family: sans-serif;
+  text - align: center;
+  font - size: 16px;
+  font - family: sans - serif;
 }
 .aback {
-	background-image:url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
-	background-size: cover ;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 100%;
+  background - image: url("https://images.wallpaperscraft.com/image/grand_theft_auto_grand_theft_auto_online_gta_5_102136_1280x800.jpg");
+  background - size: cover;
+  background - repeat: no - repeat;
+  background - position: center;
+  height: 100 %;
 
 }
 .mheader {
- 	padding: 10px;
-    	text-align: center;
-	font-family: Pricedown Bl, sans-serif;
-    	color: white;
-	font-size: 22px;
+  padding: 10px;
+  text - align: center;
+  font - family: Pricedown Bl, sans - serif;
+  color: white;
+  font - size: 22px;
 
 }
 .bodytext {
-	color: maroon;
-	text-align: center;
-	font-size:16px;
-	font-family: sans-serif;
-	margin-left: 15%;
-	margin-right:15%;
+  color: maroon;
+  text - align: center;
+  font - size: 16px;
+  font - family: sans - serif;
+  margin - left: 15 %;
+  margin - right: 15 %;
 }
 
 #nav {
@@ -145,92 +145,92 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
-  padding-top: 30px;
+  background - color: black;
+  padding - top: 30px;
   opacity: 0.9;
 }
 #navElements {
-  font-size: 20px;
-  line-height: 1;
-font-family: Helvetica, Arial, sans-serif;
+  font - size: 20px;
+  line - height: 1;
+  font - family: Helvetica, Arial, sans - serif;
 }
 
 #gametitle {
-	height: 500px;
-	width: 600px;
-	left: 50%;
+  height: 500px;
+  width: 600px;
+  left: 50 %;
 }
 
 #playbutton {
-    height : 50px;
-    width : 250px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-    position: absolute; 
-    left: 500px;
-    top: 400px;
-  
-  -webkit-perspective: 700px;
-     -moz-perspective: 700px;
-      -ms-perspective: 700px;
-          perspective: 700px;
-	vertical-align: middle; 
+  height: 50px;
+  width: 250px;
+  text - align: center;
+  display: inline - block;
+  font - size: 16px;
+  border - radius: 10px;
+  position: absolute;
+  left: 500px;
+  top: 400px;
+
+  -webkit - perspective: 700px;
+  -moz - perspective: 700px;
+  -ms - perspective: 700px;
+  perspective: 700px;
+  vertical - align: middle;
 }
 
 #otherbutton{
-    height : 30px;
-    width : 150px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 4px;
-     -webkit-perspective: 700px;
-     -moz-perspective: 700px;
-      -ms-perspective: 700px;
-          perspective: 700px;
-	vertical-align: middle; 
+  height: 30px;
+  width: 150px;
+  text - align: center;
+  font - size: 16px;
+  border - radius: 4px;
+  -webkit - perspective: 700px;
+  -moz - perspective: 700px;
+  -ms - perspective: 700px;
+  perspective: 700px;
+  vertical - align: middle;
 }
 
 button {
   background: transparent;
   border: 0;
   outline: 0;
-  -webkit-appearance: none;
+  -webkit - appearance: none;
 }
 
 button {
-  display: inline-block;
+  display: inline - block;
   position: relative;
   top: 0;
-  border-bottom: 1px black;
+  border - bottom: 1px black;
   background: black;
   color: white;
-  box-shadow: 0px 0px 0px grey;
-  
-  -webkit-transform: translateZ(0);
-     -moz-transform: translateZ(0);
-      -ms-transform: translateZ(0);
-          transform: translateZ(0);
-  
-  -webkit-transition: all 0.2s ease;
-     -moz-transition: all 0.2s ease;
-      -ms-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  box - shadow: 0px 0px 0px grey;
+
+  -webkit - transform: translateZ(0);
+  -moz - transform: translateZ(0);
+  -ms - transform: translateZ(0);
+  transform: translateZ(0);
+
+  -webkit - transition: all 0.2s ease;
+  -moz - transition: all 0.2s ease;
+  -ms - transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
-button:not(Jetpackgame.html) hover {
+button: not(Jetpackgame.html) hover {
   top: -10px;
-  box-shadow: 0px 10px 10px grey; 
-  
-  -webkit-transform: rotateX(15deg);
-     -moz-transform: rotateX(15deg);
-      -ms-transform: rotateX(15deg);
-          transform: rotateX(15deg);
+  box - shadow: 0px 10px 10px grey;
+
+  -webkit - transform: rotateX(15deg);
+  -moz - transform: rotateX(15deg);
+  -ms - transform: rotateX(15deg);
+  transform: rotateX(15deg);
 }
 
-button:not(Jetpackgame.html) active {
+button: not(Jetpackgame.html) active {
   top: 0px;
-  box-shadow: 0px 0px 0px rgba(165, 23, 15, 0);
+  box - shadow: 0px 0px 0px rgba(165, 23, 15, 0);
 }
 
