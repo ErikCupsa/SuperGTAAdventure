@@ -285,7 +285,7 @@ function moveGamePiece(event) {
       restartGame();
       deathNoise.play();
     }
-    else {
+    else if(userLevel >= 5){
       alert("You are currently on the last level! Do not give up!")
     }
   }
