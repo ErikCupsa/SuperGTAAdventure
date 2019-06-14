@@ -740,7 +740,7 @@ function levelFive(){
       else if(gameArea.frameNo > 2250 && gameArea.frameNo < 2350) {
         generatedObstaclesTop[i].x += -6;
         generatedObstaclesTop[i].update();
-      
+      }
       else if(gameArea.frameNo > 2350 && gameArea.frameNo < 2450) {
         generatedObstaclesTop[i].x += -8;
         generatedObstaclesTop[i].update();
