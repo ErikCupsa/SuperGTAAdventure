@@ -167,7 +167,7 @@ font-family: Helvetica, Arial, sans-serif;
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    position: relative; 
+    position: absolute; 
     top: 400px;
   justify-content: center;
   
