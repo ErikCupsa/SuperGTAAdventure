@@ -212,10 +212,10 @@ button {
       -ms-transform: translateZ(0);
           transform: translateZ(0);
   
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-      -ms-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+     -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+          transition: all 0.2s ease;
 }
 
 button:not(Jetpackgame.html) hover {
