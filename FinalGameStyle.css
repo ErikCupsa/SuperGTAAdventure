@@ -169,7 +169,8 @@ font-family: Helvetica, Arial, sans-serif;
     border-radius: 10px;
     position: relative; 
     top: 400px;
-	left: 50%;
+	display: flex;
+  justify-content: center;
   
   -webkit-perspective: 700px;
      -moz-perspective: 700px;
