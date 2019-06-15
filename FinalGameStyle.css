@@ -170,6 +170,7 @@ font-family: Helvetica, Arial, sans-serif;
     position: absolute; 
     top: 400px;
   justify-content: center;
+	align: center;
   
   -webkit-perspective: 700px;
      -moz-perspective: 700px;
