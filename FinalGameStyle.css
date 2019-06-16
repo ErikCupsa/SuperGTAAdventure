@@ -85,17 +85,11 @@ img {
 	height: 50px;
 	width: 250px;
 	text-align: center;
-	display: inline-block;
 	font-size: 16px;
 	border-radius: 10px;
 	position: absolute;
-	left: 50%;
 	top: 550px;
-	-webkit-perspective: 700px;
-	-moz-perspective: 700px;
-	-ms-perspective: 700px;
-	perspective: 700px;
-	vertical-align: middle;
+	
 }
 
 p {
